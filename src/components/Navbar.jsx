@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import HoverBorderGradientDemo from './hover-border-gradient-demo'
 
 const Navbar = () => {
     const [nav, setnav] = useState(false)
@@ -10,7 +11,7 @@ const Navbar = () => {
 
 
 
-    
+
     return (
         <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
             <h1 className='text-3xl w-full font-bold '>SITENAME</h1>
@@ -23,9 +24,17 @@ const Navbar = () => {
             </ul>
             <div className='block flex justify-between items-center gap-4'>
                 <Show when="signed-out">
-                    <button className='w-[150px] rounded-md font-medium my-3 mx-auto px-6 py-3 bg-green-700 text-white'>
-                        <SignInButton />
-                    </button>
+                    
+                        {/* <SignInButton /> */}
+                        <HoverBorderGradientDemo/>
+                    
+                    {/* <HoverBorderGradient
+                        containerClassName="rounded-full"
+                        as="button"
+                        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
+                        <AceternityLogo />
+                        <span><SignInButton /></span>
+                    </HoverBorderGradient> */}
                 </Show>
                 <Show when="signed-in">
                     <button>
@@ -46,7 +55,7 @@ const Navbar = () => {
                     <li className='p-4'><a href="">Contact</a></li>
                 </ul>
             </div>
-            
+
         </div>
     )
 }

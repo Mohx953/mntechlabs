@@ -11,10 +11,11 @@
 }
 html{
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 body{
-    background: gray;
-    background: linear-gradient(to right(#000000, rgb(41, 41, 47)));
+    /* background: gray;
+    background: linear-gradient(to right(#000000, rgb(41, 41, 47))); */
 }
 
 @theme inline {
