@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion } from "motion/react";
 import DottedMap from "dotted-map";
 
-import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 export default function WorldMap({
   dots = [],

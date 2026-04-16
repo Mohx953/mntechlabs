@@ -17,6 +17,9 @@ body{
     /* background: gray;
     background: linear-gradient(to right(#000000, rgb(41, 41, 47))); */
 }
+#footer{
+  background: linear-gradient(to bottom, #000000, rgb(41, 41, 47));
+}
 
 @theme inline {
 
@@ -99,6 +102,14 @@ body{
     --radius-3xl: calc(var(--radius) * 2.2);
 
     --radius-4xl: calc(var(--radius) * 2.6);
+
+    --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
 }
 
 :root {
@@ -242,5 +253,11 @@ body{
     }
   html {
     @apply font-sans;
+    }
+  .mapboxgl-popup-content, .maplibregl-popup-content {
+    @apply bg-transparent! shadow-none! p-0! rounded-none!;
+    }
+  .mapboxgl-popup-tip, .maplibregl-popup-tip {
+    @apply hidden!;
     }
 }

@@ -10,6 +10,10 @@ import CarouselDemo from './components/carousel-demo'
 import StickyScrollRevealDemo from './components/sticky-scroll-reveal-demo'
 import MacbookScrollDemo from './components/macbook-scroll-demo'
 import CardHoverEffectDemo from './components/card-hover-effect-demo'
+import Footer from './components/Footer'
+import WorldMapDemo from './components/world-map-demo'
+import WorldMap from './components/ui/world-map'
+import InfiniteMovingCardsDemo from './components/infinite-moving-cards-demo'
 
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
       <HeroSectionOne/> 
       <StickyScrollRevealDemo/>
       <CardHoverEffectDemo/>
+      <InfiniteMovingCardsDemo/>
+
+      <Footer/>
+
       
     </>
   )

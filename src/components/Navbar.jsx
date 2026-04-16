@@ -14,13 +14,13 @@ const Navbar = () => {
 
     return (
         <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-            <h1 className='text-3xl w-full font-bold '>SITENAME</h1>
+            <h1 className='text-3xl w-full font-bold '>MNTLABS</h1>
             <ul className='flex hidden md:flex '>
-                <li className='p-4 hover:text-green-700'><a href="">Home</a></li>
-                <li className='p-4 hover:text-green-700'><a href="">About</a></li>
-                <li className='p-4 hover:text-green-700'><a href="">Services</a></li>
-                <li className='p-4 hover:text-green-700'><a href="">Products</a></li>
-                <li className='p-4 hover:text-green-700'><a href="">Contact</a></li>
+                <li className='p-4 hover:text-purple-600'><a href="">Home</a></li>
+                <li className='p-4 hover:text-purple-600'><a href="">About</a></li>
+                <li className='p-4 hover:text-purple-600'><a href="">Services</a></li>
+                <li className='p-4 hover:text-purple-600'><a href="">Products</a></li>
+                <li className='p-4 hover:text-purple-600'><a href="">Contact</a></li>
             </ul>
             <div className='block flex justify-between items-center gap-4'>
                 <Show when="signed-out">
