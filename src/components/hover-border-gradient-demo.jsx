@@ -8,7 +8,7 @@ export default function HoverBorderGradientDemo() {
     <div className="flex justify-center text-center">
       <HoverBorderGradient
         containerClassName="rounded-full"
-        as="button"
+        as="div"
         className="dark:bg-black bg-white text-black dark:text-white text-center justify-center flex items-center w-[150px] space-x-2">
         {/* <AceternityLogo /> */}
         <span><SignInButton/></span>
