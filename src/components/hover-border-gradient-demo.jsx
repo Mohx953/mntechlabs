@@ -6,13 +6,19 @@ import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
 export default function HoverBorderGradientDemo() {
   return (
     <div className="flex justify-center text-center">
+      <Show when="signed-out">
       <HoverBorderGradient
         containerClassName="rounded-full"
         as="div"
         className="dark:bg-black bg-white text-black dark:text-white text-center justify-center flex items-center w-[150px] space-x-2">
         {/* <AceternityLogo /> */}
+        
         <span><SignInButton/></span>
       </HoverBorderGradient>
+      </Show>
+      <Show when="signed-in">
+          <UserButton/>
+        </Show>
     </div>
   );
 }

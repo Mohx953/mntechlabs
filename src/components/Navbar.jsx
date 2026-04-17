@@ -23,24 +23,7 @@ const Navbar = () => {
                 <li className='p-4 hover:text-purple-600'><a href="">Contact</a></li>
             </ul>
             <div className='block flex justify-between items-center gap-4'>
-                <Show when="signed-out">
-                    
-                        {/* <SignInButton /> */}
-                        <HoverBorderGradientDemo/>
-                    
-                    {/* <HoverBorderGradient
-                        containerClassName="rounded-full"
-                        as="button"
-                        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
-                        <AceternityLogo />
-                        <span><SignInButton /></span>
-                    </HoverBorderGradient> */}
-                </Show>
-                <Show when="signed-in">
-                    <button>
-                        <UserButton />
-                    </button>
-                </Show>
+                <HoverBorderGradientDemo/>
             </div>
             <div onClick={handleNav} className='md:hidden'>
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
