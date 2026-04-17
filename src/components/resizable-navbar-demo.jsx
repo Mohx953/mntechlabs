@@ -11,6 +11,7 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { Show, SignInButton, UserButton } from "@clerk/react";
 import HoverBorderGradientDemo from './hover-border-gradient-demo'
 
 export default function NavbarDemo() {
@@ -39,7 +40,17 @@ export default function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <HoverBorderGradientDemo/>
+            
+                <Show when="signed-out">
+                    <button className='dark:bg-white bg-white text-black dark:text-white text-center justify-center flex items-center w-[150px] space-x-2'>
+                        <SignInButton />
+                    </button>
+                </Show>
+                <Show when="signed-in">
+                    <UserButton />
+                </Show>
+                
+            
             <NavbarButton variant="primary"><a href="http://mntlabs-mahamule.wuaze.com" target="_blank" rel="noopener noreferrer">Dev Site</a></NavbarButton>
           </div>
         </NavBody>
@@ -48,9 +59,19 @@ export default function NavbarDemo() {
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
+            <div className="flex items-center gap-3">
+              <Show when="signed-out">
+                  <button className='dark:bg-white bg-white text-black dark:text-white text-center justify-center flex items-center px-3 py-1 rounded-md text-sm space-x-2'>
+                      <SignInButton />
+                  </button>
+              </Show>
+              <Show when="signed-in">
+                  <UserButton />
+              </Show>
+              <MobileNavToggle
+                isOpen={isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
+            </div>
           </MobileNavHeader>
 
           <MobileNavMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)}>
