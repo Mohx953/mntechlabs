@@ -14,6 +14,8 @@ import Footer from './components/Footer'
 import WorldMapDemo from './components/world-map-demo'
 import WorldMap from './components/ui/world-map'
 import InfiniteMovingCardsDemo from './components/infinite-moving-cards-demo'
+import StickyBannerDemo from './components/sticky-banner-demo'
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
 
   return (
     <>
+    <StickyBannerDemo/>
       <Hero/>  
       <MacbookScrollDemo/>
       <HeroSectionOne/> 

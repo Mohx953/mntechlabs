@@ -9,16 +9,19 @@ export const StickyBanner = ({
   hideOnScroll = false
 }) => {
   const [open, setOpen] = useState(true);
+  const [dismissed, setDismissed] = useState(false);
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(latest);
+    if (dismissed) return;
     if (hideOnScroll && latest > 40) {
       setOpen(false);
     } else {
       setOpen(true);
     }
   });
+
+  if (dismissed) return null;
 
   return (
     <motion.div
@@ -47,7 +50,10 @@ export const StickyBanner = ({
           scale: 1,
         }}
         className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer"
-        onClick={() => setOpen(!open)}>
+        onClick={() => {
+          setOpen(false);
+          setTimeout(() => setDismissed(true), 300); // Wait for exit animation
+        }}>
         <CloseIcon className="h-5 w-5 text-white" />
       </motion.button>
     </motion.div>

@@ -17,7 +17,7 @@ body{
     /* background: gray;
     background: linear-gradient(to right(#000000, rgb(41, 41, 47))); */
 }
-#footer{
+#Bottom{
   background: linear-gradient(to bottom, #000000, rgb(41, 41, 47));
 }
 

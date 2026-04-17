@@ -11,21 +11,20 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
-import HoverBorderGradientDemo from './hover-border-gradient-demo'
 
 export default function NavbarDemo() {
   const navItems = [
     {
-      name: "Home",
-      link: "#",
+      name: "Features",
+      link: "#features",
     },
     {
-      name: "About",
-      link: "#footer",
+      name: "Pricing",
+      link: "#pricing",
     },
     {
-      name: "Products",
-      link: "#",
+      name: "Contact",
+      link: "#contact",
     },
   ];
 
@@ -39,8 +38,8 @@ export default function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <HoverBorderGradientDemo/>
-            <NavbarButton variant="primary"><a href="http://mntlabs-mahamule.wuaze.com" target="_blank" rel="noopener noreferrer">Dev Site</a></NavbarButton>
+            <NavbarButton variant="secondary">Login</NavbarButton>
+            <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>
         </NavBody>
 
@@ -64,18 +63,23 @@ export default function NavbarDemo() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <HoverBorderGradientDemo/>
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full">
-                <a href="http://mntlabs-mahamule.wuaze.com" target="_blank" rel="noopener noreferrer">Dev Site</a>
+                Login
+              </NavbarButton>
+              <NavbarButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="primary"
+                className="w-full">
+                Book a call
               </NavbarButton>
             </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      {/* <DummyContent /> */}
+      <DummyContent />
       {/* Navbar */}
     </div>
   );
