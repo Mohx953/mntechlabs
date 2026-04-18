@@ -26,7 +26,19 @@ export default function CarouselDemo() {
       title: "MntLiveScore",
       button: "Explore Component",
       src: "https://i.imghippo.com/files/MYvA1936k.png",
-      linl:"https://mohx953.github.io/mntlabs-livescore/live-score.html",
+      link:"https://mohx953.github.io/mntlabs-livescore/live-score.html",
+    },
+    {
+      title: "UniBudget",
+      button: "Explore Component",
+      src: "https://i.imghippo.com/files/DFFs8486rc.png",
+      link:"https://unibudget.ct.ws",
+    },
+    {
+      title: "MNTLABS AI",
+      button: "Explore Component",
+      src: "https://i.imghippo.com/files/yPxk3476VXM.png",
+      link:"#",
     },
   ];
   return (

@@ -16,6 +16,8 @@ import WorldMap from './components/ui/world-map'
 import InfiniteMovingCardsDemo from './components/infinite-moving-cards-demo'
 import StickyBannerDemo from './components/sticky-banner-demo'
 import HeroParallaxDemo from './components/hero-parallax-demo'
+import Globe3DDemo from './components/3d-globe-demo'
+import ThreeDMarqueeDemo from './components/3d-marquee-demo'
 
 
 
@@ -28,12 +30,12 @@ function App() {
     <StickyBannerDemo/>
       <Hero/>  
       <HeroParallaxDemo/>
-      <MacbookScrollDemo/>
+      {/* <MacbookScrollDemo/> */}
       <HeroSectionOne/> 
       <StickyScrollRevealDemo/>
       <CarouselDemo/>
       <CardHoverEffectDemo/>
-      
+      <ThreeDMarqueeDemo/>
       {/* <InfiniteMovingCardsDemo/> */}
 
       <Footer/>

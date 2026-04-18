@@ -52,8 +52,8 @@ export default function NavbarDemo() {
                     <UserButton />
                 </Show>
                 
-            
-            <NavbarButton variant="primary"><a href="http://mntlabs-mahamule.wuaze.com" target="_blank" rel="noopener noreferrer">Dev Site</a></NavbarButton>
+            <Show when="signed-out"></Show>
+            <Show when="signed-in"> <NavbarButton variant="primary"><a href="http://mntlabs-mahamule.wuaze.com" target="_blank" rel="noopener noreferrer">Dev Site</a></NavbarButton></Show>
           </div>
         </NavBody>
 
@@ -90,12 +90,15 @@ export default function NavbarDemo() {
             ))}
             <div className="flex w-full flex-col gap-4">
               <HoverBorderGradientDemo/>
+              <Show when="signed-out"></Show>
+              <Show when="signed-in">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full">
                 <a href="http://mntlabs-mahamule.wuaze.com" target="_blank" rel="noopener noreferrer">Dev Site</a>
               </NavbarButton>
+              </Show>
             </div>
           </MobileNavMenu>
         </MobileNav>

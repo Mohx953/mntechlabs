@@ -1,6 +1,7 @@
 import React from 'react'
 import { ReactTyped } from "react-typed";
 import { NoiseBackground } from "@/components/ui/noise-background";
+import { Show } from '@clerk/react';
 
 const Landing = () => {
   return (
@@ -10,8 +11,8 @@ const Landing = () => {
             {/* <p className=' text-blue-500 font-bold p-2' >Technology Lab</p> */}
             <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>MN-Tech Labs.</h1>
             <div className='flex justify-center items-center'>
-                <p className='md:text-5xl sm:text-4xl text-xl font-bold  py-4'>Home of:</p>
-                <ReactTyped className='md:text-5xl sm:text-4xl text-xl font-bold pl-2 md:pl-4' strings={['UNIBUDGET', 'WEATHORA','MNT-LIVESCORE', 'MNT-MOVIES']} typeSpeed={100} backSpeed={120} loop/>
+               <Show when="signed-out"></Show><Show when="signed-in"><p className='md:text-5xl sm:text-4xl text-xl font-bold  py-4'>Home of:</p>
+                <ReactTyped className='md:text-5xl sm:text-4xl text-xl font-bold pl-2 md:pl-4' strings={['UNIBUDGET', 'WEATHORA','MNT-LIVESCORE', 'MNT-MOVIES']} typeSpeed={100} backSpeed={120} loop/></Show> 
             </div>
             <p className='md:text-2xl text-xl font-bold text-gray-500'></p>
             {/* <button className='bg-blue-500 w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'><a href="#cards">Go MNT</a></button> */}
