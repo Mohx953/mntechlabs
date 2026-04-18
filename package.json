@@ -12,6 +12,7 @@
   "dependencies": {
     "@clerk/react": "^6.4.2",
     "@fontsource-variable/geist": "^5.2.8",
+    "@kinde-oss/kinde-auth-react": "^5.11.1",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.0",
     "@tabler/icons-react": "^3.41.1",

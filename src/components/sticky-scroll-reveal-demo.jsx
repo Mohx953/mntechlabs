@@ -100,7 +100,7 @@ const content = [
 ];
 export default function StickyScrollRevealDemo() {
   return (
-    <div className="w-full py-4">
+    <div className="w-full py-4" id="cards">
       <StickyScroll content={content} />
     </div>
   );

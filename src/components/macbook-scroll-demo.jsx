@@ -11,7 +11,7 @@ export default function MacbookScrollDemo() {
       
       <MacbookScroll
         title={
-          <span>
+          <span >
             This website was built in Vite + React, Tailwind Css & Aceternity UI <br /> No kidding.
           </span>
         }

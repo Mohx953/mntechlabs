@@ -7,23 +7,26 @@ export default function CarouselDemo() {
     {
       title: "Weathora",
       button: "Explore Component",
-      src: "https://d.imgvision.net/mnt/weathoraa.png",
+      src: "https://i.imghippo.com/files/hYx4340iJQ.png",
       link:"https://mnt-weathora.vercel.app/",
     },
     {
       title: "MntMovies",
       button: "Explore Component",
-      src: "https://d.imgvision.net/mnt/work_5.png",
+      src: "https://i.imghippo.com/files/JDR2730Dow.png",
+      link:'https://mntlabs-movies.vercel.app/',
     },
     {
       title: "MntCentre",
       button: "Explore Component",
-      src: "https://d.imgvision.net/mnt/work_6.png",
+      src: "https://i.imghippo.com/files/sEqq7943ZW.png",
+      link:"#",
     },
     {
       title: "MntLiveScore",
       button: "Explore Component",
-      src: "https://d.imgvision.net/mnt/work_7.png",
+      src: "https://i.imghippo.com/files/MYvA1936k.png",
+      linl:"https://mohx953.github.io/mntlabs-livescore/live-score.html",
     },
   ];
   return (

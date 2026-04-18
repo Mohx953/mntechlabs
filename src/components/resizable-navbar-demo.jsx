@@ -42,10 +42,12 @@ export default function NavbarDemo() {
           <div className="flex items-center gap-4">
             
                 <Show when="signed-out">
-                    <button className='dark:bg-white bg-white text-black dark:text-white text-center justify-center flex items-center w-[150px] space-x-2'>
-                        <SignInButton />
-                    </button>
-                </Show>
+                  
+                      <button className='dark:bg-white w-[150px] h-[40px] bg-white text-black dark:text-white text-center justify-center flex items-center px-3 py-1 rounded-md font-bold text-sm cursor-pointer'>
+                          <SignInButton/>
+                      </button>
+                
+              </Show>
                 <Show when="signed-in">
                     <UserButton />
                 </Show>
@@ -61,9 +63,11 @@ export default function NavbarDemo() {
             <NavbarLogo />
             <div className="flex items-center gap-3">
               <Show when="signed-out">
-                  <button className='dark:bg-white bg-white text-black dark:text-white text-center justify-center flex items-center px-3 py-1 rounded-md text-sm space-x-2'>
-                      <SignInButton />
-                  </button>
+                  
+                      <div className='dark:bg-white w-[150px] h-[40px] font-bold bg-white text-black dark:text-white text-center justify-center flex items-center px-3 py-1 rounded-full text-sm cursor-pointer'>
+                          <SignInButton/>
+                      </div>
+                
               </Show>
               <Show when="signed-in">
                   <UserButton />

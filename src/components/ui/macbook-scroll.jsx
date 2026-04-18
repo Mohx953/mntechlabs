@@ -130,9 +130,9 @@ export const Lid = ({
           className="absolute inset-0 flex items-center justify-center rounded-lg bg-[#010101]">
           <span className="text-white">
             <img
-      src="https://i.imghippo.com/files/uK3985US.png"
-      alt="MntLabs logo"
-      />
+              src="https://i.imghippo.com/files/uK3985US.png"
+              alt="MntLabs logo"
+            />
           </span>
         </div>
       </div>
