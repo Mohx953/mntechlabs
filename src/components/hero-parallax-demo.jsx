@@ -7,91 +7,91 @@ export default function HeroParallaxDemo() {
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "MNTLABS Landing Page",
+    link: "#",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "https://i.imghippo.com/files/ceGf9815lY.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    title: "MNT-MOVIES",
+    link: "https://https://mntlabs-movies.vercel.app/",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/cursor.png",
+      "https://i.imghippo.com/files/MOX9037xFU.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "MNTLABS Landing Page",
+    link: "#",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/rogue.png",
+      "https://i.imghippo.com/files/rus8596dQ.png",
   },
 
   {
-    title: "Editorially",
+    title: "MNTLABS AI",
     link: "https://editorially.org",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/editorially.png",
+      "https://i.imghippo.com/files/kAHW7580GMA.png",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
+    title: "MNTLABS STORE",
+    link: "#",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/editrix.png",
+      "https://i.imghippo.com/files/Mz2865Ff.png",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "MNT MOVIES",
+    link: "https://mntlabs-movies.vercel.app/",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/algochurn.png",
-  },
-  {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/aceternityui.png",
-  },
-  {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "https://i.imghippo.com/files/MOX9037xFU.png",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "MNTLABS STORE",
+    link: "#",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "https://i.imghippo.com/files/Mz2865Ff.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "UniBudget",
+    link: "https://unibudget.ct.ws/",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "https://i.imghippo.com/files/DFFs8486rc.png",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "Weathora",
+    link: "https://mnt-weathora.vercel.app/",
     thumbnail:
-      "https://www.aceternity.com/images/products/thumbnails/new/invoker.png",
+      "https://i.imghippo.com/files/xwMK2132fo.png",
+  },
+  {
+    title: "WEATHORA",
+    link: "https://mnt-weathora.vercel.app/",
+    thumbnail:
+      "https://i.imghippo.com/files/Wfkh5606aQE.png",
+  },
+  {
+    title: "UNIBUDGET",
+    link: "https://unibudget.ct.ws/",
+    thumbnail:
+      "https://i.imghippo.com/files/DFFs8486rc.png",
+  },
+
+  {
+    title: "WEATHORA",
+    link: "https://mnt-weathora.vercel.app/",
+    thumbnail:
+      "https://i.imghippo.com/files/hYx4340iJQ.png",
+  },
+  {
+    title: "MNT-MOVIES",
+    link: "https://mntlabs-movies.vercel.app/",
+    thumbnail:
+      "https://i.imghippo.com/files/JDR2730Dow.png",
+  },
+  {
+    title: "MNTLABS LANDING PAGE",
+    link: "#",
+    thumbnail:
+      "https://i.imghippo.com/files/sEqq7943ZW.png",
   },
   {
     title: "E Free Invoice",
